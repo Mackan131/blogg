@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Skapa nytt inlägg</title>
+</head>
+<body>
+    <%- include('partials/header') %>
+    <h2>Skapa nytt inlägg</h2>
+    <form action="/posts" method="POST">
+        <label for="post">Inlägg:</label>
+        <input type="text" id="post" name="post">
+        <button type="submit">Skapa</button>
+    </form>
+    <a href="/">Tillbaka</a>
+    <%- include('partials/footer') %>
+</body>
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Alla Inlägg</title>
+</head>
+<body>
+    <%- include('partials/header') %>
+    <h2>Alla Inlägg</h2>
+    <ul>
+        <% posts.forEach(post => { %>
+            <li><%= post %></li>
+        <% }) %>
+    </ul>
+    <a href="/posts/new">Skapa ett nytt inlägg</a>
+    <a href="/posts/edit">redigera/ta bort inlägg</a>
+    <%- include('partials/footer') %>
+</body>
+</html>
